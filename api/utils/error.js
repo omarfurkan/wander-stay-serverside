@@ -1,6 +1,6 @@
 export const createError = (status, message) => {
     const err = new Error();
-    err.stack = status;
+    err.status = status;
     err.message = message;
     return err;
-}
+};
